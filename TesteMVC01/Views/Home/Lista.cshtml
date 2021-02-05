@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Lista";
+}
+
+<h2>Lista</h2>
+
+<div>
+    <b>Pessoa Id</b> @*Negrito*@
+</div>
+<div>
+    @ViewData["idPessoa"];
+</div>
+<div>
+    <b>Nome</b> @*Negrito*@
+</div>
+<div>
+    @ViewData["Nome"];
+</div>
+<div>
+    <div>
+        <b>Tipo</b> @*Negrito*@
+    </div>
+    @ViewData["Tipo"];
+</div>
+
+@*~/ volta em nível, ou seja, para a página anterior*@
+<a href="~/">Voltar</a>

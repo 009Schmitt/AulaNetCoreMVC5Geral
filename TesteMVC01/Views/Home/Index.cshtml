@@ -1,0 +1,56 @@
+﻿@*para usar a view tipada deve-se adicionar o model*@
+@model TesteMVC01.Models.Pessoa;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Usando ASP MVC</h2>
+<p>Aula de Victor Schmitt :)</p>
+
+<br />
+<br />
+<br />
+
+@*<p> @ViewData["idPessoa"] </p>
+    <p> @ViewData["Nome"] </p>
+    <p> @ViewData["Tipo"] </p>*@
+
+@*<p>  @ViewBag.id </p>
+    <p>  @ViewBag.nome </p>
+    <p>  @ViewBag.tipo </p>*@
+
+
+@*<p> view tipada </p>
+<p> @Model.idPessoa</p>
+<p> @Model.Nome</p>
+<p> @Model.Tipo</p>*@
+
+
+@*post recebe informação
+    Set define informação*@
+<form action="Home/Lista" method="post">
+    <fieldset>
+        <legend>informaçõe de pessoas</legend>
+        <div>
+            <label for="PessoaId">Id</label>
+        </div>
+        <div>
+            <input type="number" value="@Model.idPessoa" name="idPessoa"
+        </div>
+        <div>
+            <label for="nome">Nome</label>
+        </div>
+        <div>
+            <input type="text" value="@Model.Nome" name="nome"
+        </div>
+        <div>
+            <label for="tipo">Tipo</label>
+        </div>
+        <div>
+            <input type="text" value="@Model.Tipo" name="tipo"
+        </div>
+        <p><input type="submit" value="Enviar"</p>
+
+    </fieldset>
+</form>
