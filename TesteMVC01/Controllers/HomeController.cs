@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using TesteMVC01.Models;
 
@@ -43,7 +44,27 @@ namespace TesteMVC01.Controllers
 
         public IActionResult Contatos()
         {
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.gmail.com";
+            smtp.Port = 587;
+            smtp.EnableSsl = true; // isto deve acontecer antes das credencials                        
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = new System.Net.NetworkCredential("SeuEmail@gmail.com", "SuaSenha");
+            smtp.Timeout = 300000;
+
+            //SmtpClient smtp = new SmtpClient("smtp.gmail.com",25);
+
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("SeuEmail@gmail.com");
+            mail.To.Add("EmailDoRecebedor@Dominio.com");
+            mail.Subject = "Este é o titulo";
+            mail.Body = "Este é corpo";
+
+            smtp.Send(mail);
+
             return View();
         }
+
+
     }
 }

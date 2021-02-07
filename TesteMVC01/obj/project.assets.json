@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Victor Schmitt\\source\\repos\\TesteMVC01\\TesteMVC01.csproj",
+      "projectUniqueName": "C:\\Users\\Victor Schmitt\\Documents\\GitHub\\AulaNetCoreMVC5Geral\\TesteMVC01\\TesteMVC01.csproj",
       "projectName": "TesteMVC01",
-      "projectPath": "C:\\Users\\Victor Schmitt\\source\\repos\\TesteMVC01\\TesteMVC01.csproj",
+      "projectPath": "C:\\Users\\Victor Schmitt\\Documents\\GitHub\\AulaNetCoreMVC5Geral\\TesteMVC01\\TesteMVC01.csproj",
       "packagesPath": "C:\\Users\\Victor Schmitt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Victor Schmitt\\source\\repos\\TesteMVC01\\obj\\",
+      "outputPath": "C:\\Users\\Victor Schmitt\\Documents\\GitHub\\AulaNetCoreMVC5Geral\\TesteMVC01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Victor Schmitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
